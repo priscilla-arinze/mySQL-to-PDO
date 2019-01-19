@@ -12,6 +12,8 @@
 
 <?php
 	require_once("../connect.php");
+	//$server = mysql_connect($db_host, 'ah_cms_adm', $db_password);
+	//mysql_select_db('ah_cms');
 	$query = "
 	SELECT faculty_id,name_last,name_first,title,email,office,phone,specialization FROM faculty_db  
 	WHERE classification like '%fulltime%' AND current IS NULL AND (area like '%arts%') 
