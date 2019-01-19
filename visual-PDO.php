@@ -49,6 +49,7 @@
 	
 <?php
 	require_once("../connect-not-obfuscated-pdo.php");
+	//$server = new PDO("mysql:host=$db_host;dbname=ah_cms", 'ah_cms_adm', $db_password);
 	$query = "
 	SELECT faculty_id,name_last,name_first,title,email,office,phone,specialization FROM faculty_db  
 	WHERE classification like '%parttime%' AND current IS NULL AND (area like '%arts%') 
